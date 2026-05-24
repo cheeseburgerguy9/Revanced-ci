@@ -6,11 +6,6 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[YouTube]
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [YouTube-Morphe]
 app-name = "YouTube"
@@ -21,13 +16,6 @@ build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-
-[Music]
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Music-Morphe]
 app-name = "Music"
@@ -40,35 +28,25 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[Reddit-Morphe]
-app-name = "Reddit"
-rv-brand = "Morphe"
-build-mode = "both"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-dpi = "120-640dpi"
+[CaitlinGram]
+apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
+version = "beta"
+included-patches = "'Hide ads' 'Enable developer menu' 'Disable analytics' 'Remove build expired popup' 'Sanitize sharing links'"
+exclusive-patches = true
 
-[Twitter]
-patches-source = "crimera/piko"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-build-mode = "module"
-version = "11.81.0-release.0"
-include-stock = "split"
+[CaitlinMusic]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+excluded-patches = "'Permanent repeat' 'Custom branding' 'Hide buttons' 'Hide category bar' 'Hide layout components' 'Change miniplayer color'"
 
-[GooglePhotos]
-build-mode = "both"
-arch = "both"
+[CaitlinTube]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+excluded-patches = "'Custom branding' 'Change header' 'Hide video action buttons' 'Navigation buttons' 'Hide player overlay buttons' 'Hide end screen cards' 'Hide end screen suggested video' 'Disable fullscreen ambient mode' 'Hide layout components' 'Hide info cards' 'Hide related video overlay' 'Disable rolling number animations' 'Hide Shorts components' 'Disable sign in to TV popup' 'Hide timestamp' 'Wide search bar' 'Open Shorts in regular player' 'Change start page' 'Disable resuming Shorts on startup' 'Alternative thumbnails' 'Announcements'"
+
+[CaitlinPhotos]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
-[Twitch]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
+[CaitlinLightroom]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom/"
+
+[Spotify]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/spotify-ab/spotify-music-podcasts/y.yCYTaVJFMfIUVXcGAx2BYk8XjWo"
